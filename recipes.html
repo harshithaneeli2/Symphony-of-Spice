@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentic Recipes | Symphony of Spice</title>
+    <meta name="description" content="Discover popular and healthy recipes from Malay, Indian, Chinese, and Indonesian cuisines. Learn to cook traditional Malaysian food.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: var(--bg-color);
+            padding: 4rem 5% 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background: white; color: var(--accent-dark-green); padding: 4px; border-radius: 4px;"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+            Symphony of Spice
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h2 class="section-title" style="font-style: italic;">Blog & Recipes</h2>
+        <p class="section-subtitle">We provide a deep dive into the four pillars of flavor in Malaysia. Choose a category below to reveal authentic cooking instructions.</p>
+    </div>
+
+    <main style="padding-top: 3rem;">
+        
+        <!-- Popular Recipes Header -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h3 style="color: var(--accent-dark-green); font-style: italic; font-size: 2rem;">Popular Recipes</h3>
+            <p style="color: var(--text-secondary);">The timeless classics from the four pillars of Malaysian cuisine.</p>
+        </div>
+
+        <div class="blog-grid" id="recipeContainer">
+            
+            <!-- Recipe 1: Nasi Lemak (Popular) -->
+            <article class="blog-card recipe-item popular">
+                <img src="images/nasilemak1.jpg" alt="Nasi Lemak" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Popular</span>
+                        <span class="origin">Malay (West Coast)</span>
+                    </div>
+                    <h3 class="card-title">Nasi Lemak</h3>
+                    <p class="card-excerpt"><strong>History:</strong> Originally an agrarian meal, farmers and fishermen ate this heavy carbohydrate dish for sustained energy over a long day. It is now the national dish of Malaysia.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>2 cups Basmati Rice</li>
+                            <li>1 cup Coconut Milk & 1 Pandan Leaf</li>
+                            <li>For Sambal: Dried chilies, belacan (shrimp paste), onions, garlic, tamarind, sugar.</li>
+                            <li>Garnish: Fried anchovies (ikan bilis), peanuts, cucumber, hard-boiled egg.</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Wash rice and cook with coconut milk, water, and pandan leaf in a rice cooker.</li>
+                            <li>Blend sambal ingredients and sauté in oil until fragrant and oil separates. Add tamarind juice, sugar, and salt.</li>
+                            <li>Fry anchovies and peanuts until crunchy.</li>
+                            <li>Serve rice hot accompanied by sambal and garnishes.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+        <!-- Expanded popular recipes continue here -->
+            <!-- Recipe 5: Laksa -->
+            <article class="blog-card recipe-item popular">
+                <img src="images/asam-laksa-recipe-1.jpg" alt="Laksa" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Popular</span>
+                        <span class="origin">Peranakan</span>
+                    </div>
+                    <h3 class="card-title">Laksa</h3>
+                    <p class="card-excerpt">A spicy noodle soup popular in Southeast Asia, consisting of thick wheat noodles or rice vermicelli with chicken, prawn or fish, served in a rich, spicy curry coconut milk broth.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 6: Char Kway Teow -->
+            <article class="blog-card recipe-item popular">
+                <img src="images/char kuey tewo.jpg" alt="Char Kway Teow" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Popular</span>
+                        <span class="origin">Chinese (Penang)</span>
+                    </div>
+                    <h3 class="card-title">Char Kway Teow</h3>
+                    <p class="card-excerpt">Flat rice noodles stir-fried over very high heat with light and dark soy sauce, chilli, prawns, deshelled blood cockles, bean sprouts, and chopped Chinese chives.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 7: Mee Goreng Mamak -->
+            <article class="blog-card recipe-item popular">
+                <img src="images/mee goreng.jpg" alt="Mee Goreng Mamak" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Popular</span>
+                        <span class="origin">Indian Muslim</span>
+                    </div>
+                    <h3 class="card-title">Mee Goreng Mamak</h3>
+                    <p class="card-excerpt">A spicy fried noodle dish originating from the Mamak community. Yellow noodles fried with garlic, shallots, fried prawn, chicken, chili, cabbage, tomatoes, egg, and soy sauce.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 8: Rendang -->
+            <article class="blog-card recipe-item popular">
+                <img src="images/beef.jpg" alt="Rendang" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Popular</span>
+                        <span class="origin">Malay/Minangkabau</span>
+                    </div>
+                    <h3 class="card-title">Beef Rendang</h3>
+                    <p class="card-excerpt">A rich, tender coconut beef stew which is explosively flavorful. The meat is slowly cooked in coconut milk and spices until all the liquid is evaporated.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 9: Nasi Goreng -->
+            <article class="blog-card recipe-item popular">
+                <img src="images/nasi goreng komeng.webp" alt="Nasi Goreng" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Popular</span>
+                        <span class="origin">Malay/Indonesian</span>
+                    </div>
+                    <h3 class="card-title">Nasi Goreng Kampung</h3>
+                    <p class="card-excerpt">A traditional Malay fried rice recipe, distinguished by its earthy, spicy flavor from pounded anchovies, shrimp paste, and bird's eye chilies, often served with a fried egg.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Healthy Recipes Header -->
+        <div style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">
+            <h3 style="color: var(--accent-dark-green); font-style: italic; font-size: 2rem;">Healthy Options</h3>
+            <p style="color: var(--text-secondary);">Nourishing meals that still pack a flavorful punch.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+        </div>
+
+        <div class="blog-grid" style="margin-bottom: 4rem;">
+            <!-- Recipe 2: Hainanese Chicken Rice (Popular/Healthy) -->
+            <article class="blog-card recipe-item popular healthy">
+                <img src="images/hainanese chicken rice.jpg" alt="Hainanese Chicken Rice" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Healthy/Popular</span>
+                        <span class="origin">Chinese (Hainan/Klang Valley)</span>
+                    </div>
+                    <h3 class="card-title">Hainanese Chicken Rice</h3>
+                    <p class="card-excerpt"><strong>History:</strong> Brought over by immigrants from Hainan province in southern China. They adapted the dish locally, creating a defining staple of Malaysian-Chinese gastronomy.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>1 whole free-range chicken</li>
+                            <li>Ginger, garlic, spring onions</li>
+                            <li>Jasmine rice (cooked in chicken fat/broth)</li>
+                            <li>Ginger-garlic chili sauce</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Poach the chicken slowly in barely simmering water with ginger and spring onions until just cooked. Plunge into ice water.</li>
+                            <li>Render chicken fat in a wok; fry garlic and uncooked rice, then transfer to a cooker using the poaching broth.</li>
+                            <li>Chop chicken and serve with fragrant rice, cucumber, and chili drizzle.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3: Banana Leaf Rice (Popular/Healthy) -->
+            <article class="blog-card recipe-item popular healthy">
+                <img src="images/indian thali1.webp" alt="Banana Leaf Rice" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Healthy/Popular</span>
+                        <span class="origin">South Indian (Penang/KL)</span>
+                    </div>
+                    <h3 class="card-title">Banana Leaf Rice</h3>
+                    <p class="card-excerpt"><strong>History:</strong> Introduced by South Indian immigrants who came to Malaya during British colonial rule. Eating on a banana leaf adds flavor and is highly hygienic and eco-friendly.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>White Rice</li>
+                            <li>Assorted vegetables (Cabbage poriyal, snake gourd)</li>
+                            <li>Dhal/Curry gravy (Sambar)</li>
+                            <li>Papadam and pickles</li>
+                        </ul>
+                        <h4>How to Cook (Vegetable Poriyal):</h4>
+                        <ol>
+                            <li>Heat coconut oil. Add mustard seeds until they pop.</li>
+                            <li>Add chopped onions, dried chilies, and curry leaves.</li>
+                            <li>Toss in finely chopped cabbage and a pinch of turmeric. Stir fry until tender but still crunchy.</li>
+                            <li>Finish with freshly grated coconut. Serve hot on a cleaned banana leaf.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Recipe 4: Soto Ayam (Healthy) -->
+            <article class="blog-card recipe-item healthy">
+                <img src="images/soto ayam.jpg" alt="Soto Ayam" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>Healthy</span>
+                        <span class="origin">Indonesian (Java/Johor)</span>
+                    </div>
+                    <h3 class="card-title">Soto Ayam</h3>
+                    <p class="card-excerpt"><strong>History:</strong> A fragrant, yellow chicken soup originating from Java, Indonesia. It became a beloved, healthy staple in the southern Malaysian state of Johor.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Shredded boiled chicken breast</li>
+                            <li>Rice vermicelli (Bihun) or compressed rice (Nasi Impit)</li>
+                            <li>Chicken broth infused with turmeric, lemongrass, and galangal</li>
+                            <li>Bean sprouts, fried shallots, begedil (potato patty)</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Blend shallots, garlic, turmeric, and ginger into a paste. Sauté until fragrant.</li>
+                            <li>Add chicken broth, bruised lemongrass, and simmer.</li>
+                            <li>In a bowl, assemble noodles/rice cakes, bean sprouts, and shredded chicken.</li>
+                            <li>Pour hot boiling soup over the bowl. Top with crispy shallots and a squeeze of lime.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:neeli.harshitha@example.com" title="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+        </div>
+        <p class="footer-text">&copy; 2026 Symphony of Spice. Designed by Neeli Harshitha for INTI University.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>

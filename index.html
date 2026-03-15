@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony of Spice | Malaysian Gastronomy</title>
+    <meta name="description" content="Explore the diverse gastronomical landscape of Malaysia. Discover authentic Malay, Indian, Chinese, and Indonesian cuisines right in the heart of Southeast Asia.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+
+    <!-- Solid Green Header Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="background: white; color: var(--accent-dark-green); padding: 4px; border-radius: 4px;"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+            Symphony of Spice
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Themed Sweep Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 style="color: #2c3e50;">Bringing Variations<br>to Your Plate</h1>
+                <p>Delicious Food, Exceptional Cultures – Exploring the Malaysian melting pot for every occasion!</p>
+                <div class="hero-buttons">
+                    <a href="recipes.html" class="btn-solid">Explore Recipes</a>
+                    <a href="about.html" class="btn-outline">Read Story</a>
+                </div>
+            </div>
+
+            <!-- Overlapping Circular Image with Badges -->
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <img src="images/nasilemak.jpg" alt="Plated Food Array">
+                </div>
+                
+                <!-- Simulated badges from the design mock -->
+                <div class="floating-badge badge-1">
+                    <span class="badge-number">4+</span>
+                    <span class="badge-text">Cultures</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <span class="badge-number">100+</span>
+                    <span class="badge-text">Flavors</span>
+                </div>
+                <div class="floating-badge badge-3">
+                    <span class="badge-number">#1</span>
+                    <span class="badge-text">Experience</span>
+                </div>
+
+                <!-- Floating card for "Nasi Lemak" -->
+                <div class="floating-card">
+                    <img class="floating-card-img" src="images/nasilemak.jpg" alt="Nasi Lemak">
+                    <div class="floating-card-info">
+                        <span class="floating-card-title">Nasi Lemak</span>
+                        <span style="font-size: 0.75rem; color: var(--text-secondary);">Malaysia's national food</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="section-header">
+            <h2 class="section-title" style="font-style: italic;">Blog & Recipes</h2>
+            <p class="section-subtitle">We provide a deep dive into the four pillars of flavor in Malaysia. Discover authentic ingredients, histories, and full recipes for a culinary adventure.</p>
+        </div>
+        
+        <div class="blog-grid">
+            <!-- Malay Cuisine Card -->
+            <article class="blog-card">
+                <img src="images/nasilemak1.jpg" alt="Nasi Lemak - Malay Cuisine" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">The Richness of Malay Cuisine</h3>
+                    <p class="card-excerpt">Famous for the national dish Nasi Lemak, fragrant coconut rice paired with spicy sambal, and complex curries like Beef Rendang.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Indian Cuisine Card (Green accent card) -->
+            <article class="blog-card ">
+                <img src="images/indian thali1.webp" alt="Indian Thali - Banana Leaf Rice" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Aromatic Indian Spices</h3>
+                    <p class="card-excerpt">Brought by the Mamak (Indian Muslim) traders. Vibrant spices, Roti Canai, and the communal experience of Banana Leaf Rice.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Chinese Cuisine Card -->
+            <article class="blog-card">
+                <img src="images/Dim-sum.jpg" alt="Dim Sum - Chinese Cuisine" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">The Art of Chinese Wok Hei</h3>
+                    <p class="card-excerpt">The legacy of early Chinese settlers. Wok-fried noodles like Char Kway Teow, delicate Dim Sum, and Hainanese Chicken Rice.</p>
+                    <a href="#" class="read-more read-more-btn">View Cooking Instructions</a>
+                    
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Local spices</li>
+                            <li>Fresh ingredients</li>
+                        </ul>
+                        <h4>How to Cook:</h4>
+                        <ol>
+                            <li>Prepare the ingredients.</li>
+                            <li>Cook with traditional techniques.</li>
+                            <li>Serve hot and enjoy!</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Indonesian Cuisine Card -->
+            <article class="blog-card">
+                <img src="images/satay.avif" alt="Satay - Indonesian Influence" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Savory Indonesian Influence</h3>
+                    <p class="card-excerpt">Sharing culinary borders. Think rich Nasi Padang, smoky charcoal-grilled Satay skewers smothered in peanut sauce.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    
+    <!-- Interactive Map Section -->
+    <section class="interactive-map-section">
+        <div class="section-header">
+            <h2 class="section-title" style="font-style: italic;">Culinary Map of Malaysia</h2>
+            <p class="section-subtitle">Hover over the regions to discover their famous traditional dishes.</p>
+        </div>
+        
+        <div class="map-container" style="align-items: stretch;">
+            <div class="map-graphic" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-height: 450px; width: 100%;">
+                <!-- LeafletJS Map Container -->
+                <div id="map" style="width: 100%; height: 450px; z-index: 1;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:neeli.harshitha@example.com" title="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+        </div>
+        <p class="footer-text">&copy; 2026 Symphony of Spice. Designed by Neeli Harshitha for INTI University.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="main.js"></script>
+</body>
+</html>
